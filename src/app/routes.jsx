@@ -26,9 +26,6 @@ export default function Home() {
         <Reveal as="section" anim="fade-up">
         <section className="panel cloudy" id="story" aria-label="Sofia's story">
           <h2 className="panelTitle">Sofia’s story</h2>
-          <p className="panelIntro">
-            A gentle walk through her wee life — the love, the joy, the courage, and the memories that stay.
-          </p>
           <div className="storyBlock" aria-live="polite">
             <p className="storyShort" style={{ marginTop: "1rem" }}>{sofiaStory.short}</p>
             <details className="storyDetails" style={{ marginTop: "1rem" }}>
