@@ -317,9 +317,11 @@
 .timelineVNote{ opacity:.9; font-size: 13px; margin-top: 2px; }
 
 @media (max-width: 640px){
-  .timelineVItem{ grid-template-columns: 24px 1fr; column-gap: 10px; }
-  .timelineVLine{ left: 12px; transform: none; }
-  .timelineVMarker{ left: 12px; top: 50%; transform: translateY(-50%); }
+  .timelineVItem{ grid-template-columns: 34px 1fr; column-gap: 10px; }
+  .timelineVLine{ left: 17px; transform: none; }
+  .timelineVMarker{ left: 17px; top: 50%; transform: translateY(-50%); }
+  .timelineVDot, .timelineVThumb{ width: 22px; height: 22px; }
+  .timelineVDot{ font-size: 14px; }
   .timelineVItem.left .timelineVCard{ grid-column: 2; }
   .timelineVItem.right .timelineVCard{ grid-column: 2; }
   .timelineVItem.left .timelineVMarker::after{ left: auto; right: -10px; width: 10px; }
@@ -700,12 +702,23 @@
 .lightboxBackdrop{ position:absolute; inset:0; background: rgba(10, 10, 18, .75); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .lightboxInner{ position:absolute; inset: 0; display: grid; grid-template-columns: 60px 1fr 60px; align-items: center; }
 .lightboxStage{ position: relative; margin: 0 6px; display: flex; align-items: center; justify-content: center; }
-.lightboxImage{ max-width: 75vw; max-height: 90vh; width: auto; height: auto; border-radius: 12px; box-shadow: 0 24px 80px rgba(0,0,0,.5); }
+.lightboxImage{ max-width: 90vw; max-height: 90vh; width: auto; height: auto; border-radius: 12px; box-shadow: 0 24px 80px rgba(0,0,0,.5); object-fit: contain; }
 .lightboxCaption{ position: absolute; left: 50%; transform: translateX(-50%); bottom: -42px; width: max-content; max-width: 88vw; color: #fff; background: rgba(20,12,60,.40); border:1px solid rgba(255,255,255,.22); padding: 8px 12px; border-radius: 12px; }
 .lightboxClose{ position: fixed; right: 12px; top: 12px; width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(255,255,255,.22); background: rgba(20,12,60,.40); color:#fff; font-size: 22px; display:inline-flex; align-items:center; justify-content:center; cursor: pointer; z-index: 10000; }
 .lightboxNav{ width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.22); background: rgba(20,12,60,.40); color:#fff; font-size: 26px; cursor: pointer; }
 .lightboxNav.prev{ margin-left: 12px; }
 .lightboxNav.next{ margin-right: 12px; }
+
+/* Lightbox mobile improvements */
+@media (max-width: 640px){
+  .lightboxInner{ grid-template-columns: 1fr; }
+  .lightboxStage{ margin: 0; }
+  .lightboxImage{ max-width: calc(100vw - 24px); max-height: calc(100vh - 160px); }
+  .lightboxCaption{ bottom: -36px; max-width: calc(100vw - 24px); }
+  .lightboxNav{ position: fixed; top: 50%; transform: translateY(-50%); z-index: 10000; }
+  .lightboxNav.prev{ left: 10px; margin: 0; }
+  .lightboxNav.next{ right: 10px; margin: 0; }
+}
 
 /* Videos */
 .videoGrid{ display: grid; gap: 14px; grid-template-columns: 1fr; }
