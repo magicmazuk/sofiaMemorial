@@ -1,5 +1,8 @@
 export const sofia = {
   name: "Sofia",
+  // Birthday config for theming; change to the correct date.
+  // Format: MM-DD (month-day, zero-padded)
+  birthday: "06-04",
 
   hero: {
     line1: "In loving memory of",
@@ -118,3 +121,7 @@ export const sofiaStory = {
   long:
     "[Story will be here about sofia.]"
 };
+
+// Easy testing flags for Birthday Mode
+// If true, forces Birthday Mode regardless of date (or use ?birthday=1 in the URL)
+export const FORCE_BIRTHDAY = false;

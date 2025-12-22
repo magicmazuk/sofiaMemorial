@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
+import { createPortal } from "react-dom";
 
 export default function Gallery({ items = [] }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,25 +51,28 @@ export default function Gallery({ items = [] }) {
         ))}
       </div>
 
-      {isOpen && count > 0 && (
-        <div className="lightboxOverlay" role="dialog" aria-modal="true">
-          <div className="lightboxBackdrop" onClick={close} />
-          <div className="lightboxInner">
-            <button className="lightboxClose" onClick={close} aria-label="Close">×</button>
-            <button className="lightboxNav prev" onClick={prev} aria-label="Previous">‹</button>
-            <div className="lightboxStage">
-              <img
-                className="lightboxImage"
-                src={safeItems[index]?.src}
-                alt={safeItems[index]?.alt || ""}
-              />
-              {safeItems[index]?.caption && (
-                <div className="lightboxCaption">{safeItems[index].caption}</div>
-              )}
+      {isOpen && count > 0 && createPortal(
+        (
+          <div className="lightboxOverlay" role="dialog" aria-modal="true">
+            <div className="lightboxBackdrop" onClick={close} />
+            <div className="lightboxInner">
+              <button className="lightboxClose" onClick={close} aria-label="Close">×</button>
+              <button className="lightboxNav prev" onClick={prev} aria-label="Previous">‹</button>
+              <div className="lightboxStage">
+                <img
+                  className="lightboxImage"
+                  src={safeItems[index]?.src}
+                  alt={safeItems[index]?.alt || ""}
+                />
+                {safeItems[index]?.caption && (
+                  <div className="lightboxCaption">{safeItems[index].caption}</div>
+                )}
+              </div>
+              <button className="lightboxNav next" onClick={next} aria-label="Next">›</button>
             </div>
-            <button className="lightboxNav next" onClick={next} aria-label="Next">›</button>
           </div>
-        </div>
+        ),
+        document.body
       )}
     </div>
   );
