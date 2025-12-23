@@ -119,7 +119,31 @@ export const sofiaStory = {
   short:
     "Sofia was born in June 2012 and was a happy, loving child. As a toddler, she was diagnosed with a rare neurological condition (OMS), and later with advanced neuroblastoma. Over several years, she endured chemotherapy, major surgery, a bone marrow transplant, and experimental treatments, showing remarkable strength throughout. Despite her illness, she lived joyfully and was deeply loved by her parents, Mario and Gemma. Sofia passed away peacefully at home on 15 December 2018.",
   long:
-    "[Story will be here about sofia.]"
+    `Sofia Jaconelli was born on 4 June 2012, weighing 7lb 5oz. She arrived into a loving, close-knit family and was instantly adored by her parents, Mario and Gemma. From the beginning, she showed a strong personality — curious, confident, and full of life.
+
+Sofia grew up surrounded by family, including her grandparents, aunts, uncles, and extended family who all played an important part in her life. Her early years were filled with birthdays, holidays, nursery, playtime, and laughter. She loved music, stories, and games, and she quickly became known for her expressive nature and quick wit.
+
+In January 2016, when Sofia was just three years old, she was diagnosed with a very rare illness. From that moment on, life changed for her and for her family. Despite the challenges that followed, Sofia showed remarkable resilience. She adapted to hospital life with bravery far beyond her years and continued to let her personality shine through.
+
+Sofia spent time receiving treatment in Glasgow, Aberdeen, and London. Along the way, she formed close bonds with hospital staff, nurses, play assistants, and other children. She made friends everywhere she went and was remembered for her warmth, humour, and determination. Even with IV lines and drip stands, she played games, hid in wardrobes, laughed with nurses, and turned hospital rooms into places of imagination.
+
+She loved Peppa Pig, playing hide and seek, and inventing games that everyone around her had to join in with. She danced whenever music played and became especially excited when she heard her favourite songs. Her teachers remembered her as a joyful presence in class, someone who danced freely and brought happiness to those around her.
+
+When her younger sister Aria was born, Sofia became a proud big sister. She was protective, caring, and deeply bonded with her. She stood up for Aria, included her in everything, and showed a maturity that surprised everyone. The two sisters shared a close and loving relationship filled with play, laughter, and loyalty.
+
+Dance became one of Sofia’s great loves. She attended dance classes whenever she was well enough and looked forward to them each week. In June 2018, she performed on stage at Motherwell Civic Centre, taking part in rehearsals and shows with confidence and joy. She shone on stage, especially during her Elvis performance, and her parents watched with immense pride.
+
+Sofia loved adventures. She visited Alton Towers and stayed in the CBeebies Land Hotel. She attended concerts by Katy Perry and Britney Spears. She walked onto the pitch at Celtic Park as part of a charity match guard of honour — a moment that brought her great happiness and her dad unforgettable pride.
+
+During her illness, many people came together to support Sofia and her family. Fundraising events, sponsored walks, and challenges raised money and awareness, but just as importantly, they brought kindness, encouragement, and love. Sofia’s journey touched people far beyond those who knew her personally.
+
+At home, Sofia treasured simple joys — playing in the garden, bouncing on the trampoline, singing, dancing, and spending time with her sister and friends. She loved her Blanky, which never left her side, and her iPad, which connected her to music, videos, animals, and the wider world. She loved animals and delighted in visits from therapy pets.
+
+Sofia shared a special bond with her grandparents, who spoiled her in all the best ways. Time at gran’s house was full of freedom, laughter, and fun — exactly as it should be.
+
+Sofia passed away peacefully with her parents beside her. Though her life was short, it was rich with love, personality, strength, and joy. She was determined, smart, feisty, affectionate, and unforgettable. She left behind a legacy of love and a reminder of how powerful a small life can be.
+
+Sofia continues to live on in photographs, videos, memories, and in the hearts of everyone who loved her.`
 };
 
 // Easy testing flags for Birthday Mode
